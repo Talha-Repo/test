@@ -32,6 +32,7 @@
             this.kryptonColorDialog1 = new Krypton.Toolkit.KryptonColorDialog();
             this.kryptonCheckBox1 = new Krypton.Toolkit.KryptonCheckBox();
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
+            this.kryptonCheckBox2 = new Krypton.Toolkit.KryptonCheckBox();
             this.SuspendLayout();
             // 
             // kryptonColorDialog1
@@ -42,28 +43,40 @@
             // 
             // kryptonCheckBox1
             // 
-            this.kryptonCheckBox1.Location = new System.Drawing.Point(355, 149);
+            this.kryptonCheckBox1.Location = new System.Drawing.Point(710, 287);
+            this.kryptonCheckBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonCheckBox1.Name = "kryptonCheckBox1";
-            this.kryptonCheckBox1.Size = new System.Drawing.Size(125, 20);
+            this.kryptonCheckBox1.Size = new System.Drawing.Size(244, 37);
             this.kryptonCheckBox1.TabIndex = 0;
             this.kryptonCheckBox1.Values.Text = "kryptonCheckBox1";
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(69, 103);
+            this.kryptonButton1.Location = new System.Drawing.Point(138, 198);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(90, 25);
+            this.kryptonButton1.Size = new System.Drawing.Size(180, 48);
             this.kryptonButton1.TabIndex = 1;
             this.kryptonButton1.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton1.Values.Text = "kryptonButton1";
             // 
+            // kryptonCheckBox2
+            // 
+            this.kryptonCheckBox2.Location = new System.Drawing.Point(275, 342);
+            this.kryptonCheckBox2.Name = "kryptonCheckBox2";
+            this.kryptonCheckBox2.Size = new System.Drawing.Size(244, 37);
+            this.kryptonCheckBox2.TabIndex = 2;
+            this.kryptonCheckBox2.Values.Text = "kryptonCheckBox2";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1661, 873);
+            this.Controls.Add(this.kryptonCheckBox2);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.kryptonCheckBox1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -76,6 +89,7 @@
         private Krypton.Toolkit.KryptonColorDialog kryptonColorDialog1;
         private Krypton.Toolkit.KryptonCheckBox kryptonCheckBox1;
         private Krypton.Toolkit.KryptonButton kryptonButton1;
+        private Krypton.Toolkit.KryptonCheckBox kryptonCheckBox2;
     }
 }
 
