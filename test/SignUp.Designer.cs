@@ -20,32 +20,15 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-            this.SuspendLayout();
-            // 
-            // SignUp
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = global::test.Properties.Resources._1755186696637;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1200, 850);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SignUp";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SinUp";
-            this.ResumeLayout(false);
-
-        }
-
-        #endregion
+        private Krypton.Toolkit.KryptonPanel SignUpPanel;
+        private Krypton.Toolkit.KryptonTextBox txtFullName;
+        private Krypton.Toolkit.KryptonTextBox txtConfirmPass;
+        private Krypton.Toolkit.KryptonTextBox txtPassword;
+        private Krypton.Toolkit.KryptonTextBox txtUserName;
+        private Krypton.Toolkit.KryptonButton btnSignUp;
+        private Krypton.Toolkit.KryptonLabel lblUploadPhoto;
+        private Krypton.Toolkit.KryptonButton btnBrowse;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private Krypton.Toolkit.KryptonLabel lblSignUp;
     }
 }
