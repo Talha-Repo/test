@@ -265,7 +265,20 @@ namespace test
             {
                 MessageBox.Show("Please upload a picture.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            if(password !=  confirmPassword)
+            {
+                MessageBox.Show("Password and Confirm Password Must me same .", "validation", MessageBoxButtons.OK);
+            }
+
+         
+
+
+
+
+
+
         }
+
         
 
         private void LoginPanel_Paint(object sender, PaintEventArgs e)
@@ -282,7 +295,7 @@ namespace test
         {
             LogIn login = new LogIn();
             login.Show();
-            this.Hide();
+           
         }
 
         private void lblLogIn_MouseEnter(object sender, EventArgs e)
@@ -300,6 +313,23 @@ namespace test
         lblLogIn.StateCommon.ShortText.Font,
         FontStyle.Regular
              );
+        }
+
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Title = "Select Profile Picture";
+            ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif"; // only images
+
+            // Show dialog and check if user selected a file
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                // Display selected image in PictureBox
+                kryptonPictureBox1.Image = Image.FromFile(ofd.FileName);
+
+                // Make sure it fits the PictureBox
+                kryptonPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
         }
     }
 }

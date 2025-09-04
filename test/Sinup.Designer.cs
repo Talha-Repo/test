@@ -72,10 +72,11 @@
             // kryptonPictureBox1
             // 
             this.kryptonPictureBox1.BackgroundImage = global::test.Properties.Resources.PROFILEBG;
-            this.kryptonPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.kryptonPictureBox1.Location = new System.Drawing.Point(109, 361);
+            this.kryptonPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.kryptonPictureBox1.Location = new System.Drawing.Point(113, 372);
             this.kryptonPictureBox1.Name = "kryptonPictureBox1";
-            this.kryptonPictureBox1.Size = new System.Drawing.Size(120, 120);
+            this.kryptonPictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.kryptonPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.kryptonPictureBox1.TabIndex = 14;
             this.kryptonPictureBox1.TabStop = false;
             // 
@@ -153,6 +154,7 @@
             this.btnBrowse.TabStop = false;
             this.btnBrowse.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnBrowse.Values.Text = "Browse";
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // txtCnfrmPass
             // 

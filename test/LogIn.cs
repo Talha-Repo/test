@@ -132,7 +132,7 @@ namespace test
         {
             signup signup = new signup();
             signup.Show();
-            this.Hide();
+            
         }
 
         private void lblSignUp_MouseEnter(object sender, EventArgs e)
