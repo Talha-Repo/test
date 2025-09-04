@@ -77,12 +77,12 @@
             this.lblSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblSignUp.Location = new System.Drawing.Point(165, 380);
             this.lblSignUp.Name = "lblSignUp";
-            this.lblSignUp.Size = new System.Drawing.Size(177, 22);
+            this.lblSignUp.Size = new System.Drawing.Size(193, 22);
             this.lblSignUp.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
             this.lblSignUp.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
             this.lblSignUp.StateCommon.ShortText.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold);
             this.lblSignUp.TabIndex = 9;
-            this.lblSignUp.Values.Text = "Don\'t have acc? SigIn";
+            this.lblSignUp.Values.Text = "Don\'t have acc? SignUp";
             this.lblSignUp.Click += new System.EventHandler(this.lblSignUp_Click);
             this.lblSignUp.MouseEnter += new System.EventHandler(this.lblSignUp_MouseEnter);
             this.lblSignUp.MouseLeave += new System.EventHandler(this.lblSignUp_MouseLeave);
@@ -175,7 +175,7 @@
             this.btnSignUp.TabIndex = 0;
             this.btnSignUp.TabStop = false;
             this.btnSignUp.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnSignUp.Values.Text = "SignUp";
+            this.btnSignUp.Values.Text = "logIn";
             // 
             // txtPassword
             // 

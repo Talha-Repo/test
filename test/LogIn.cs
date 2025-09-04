@@ -130,8 +130,8 @@ namespace test
 
         private void lblSignUp_Click(object sender, EventArgs e)
         {
-            SignUp signUp = new SignUp();
-            signUp.Show();
+            signup signup = new signup();
+            signup.Show();
             this.Hide();
         }
 

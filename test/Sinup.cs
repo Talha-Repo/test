@@ -1,5 +1,4 @@
-﻿using Krypton.Toolkit;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,17 +12,14 @@ using System.Windows.Forms;
 
 namespace test
 {
-    public partial class SignUp : Form
+    public partial class signup : Form
     {
-        public SignUp()
+        public signup()
         {
             InitializeComponent();
-
-         
-
-
         }
-        private void txtFullName_MouseEnter_1(object sender, EventArgs e)
+
+        private void txtFullName_MouseEnter(object sender, EventArgs e)
         {
             txtFullName.StateCommon.Border.Color1 = Color.FromArgb(121, 85, 72);
             txtFullName.StateCommon.Border.Color2 = Color.FromArgb(193, 154, 107);
@@ -43,20 +39,17 @@ namespace test
                 txtFullName.StateCommon.Content.Color1 = Color.FromArgb(140, 110, 90);
                 txtFullName.StateCommon.Content.Font = new Font("Segoe Script", 14, FontStyle.Bold);
             }
-
-
-
         }
 
         private void txtUserName_MouseEnter(object sender, EventArgs e)
         {
+
             txtUserName.StateCommon.Border.Color1 = Color.FromArgb(121, 85, 72);
             txtUserName.StateCommon.Border.Color2 = Color.FromArgb(193, 154, 107);
             txtUserName.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
             txtUserName.StateCommon.Border.Rounding = 20;
             txtUserName.StateCommon.Border.Width = 2;
             txtUserName.StateCommon.Content.Color1 = Color.FromArgb(90, 70, 55);
-
         }
 
         private void txtUserName_MouseLeave(object sender, EventArgs e)
@@ -68,7 +61,6 @@ namespace test
                 txtUserName.StateCommon.Content.Color1 = Color.FromArgb(140, 110, 90);
                 txtUserName.StateCommon.Content.Font = new Font("Segoe Script", 14, FontStyle.Bold);
             }
-
         }
 
         private void txtPassword_MouseEnter(object sender, EventArgs e)
@@ -79,8 +71,6 @@ namespace test
             txtPassword.StateCommon.Border.Rounding = 20;
             txtPassword.StateCommon.Border.Width = 2;
             txtPassword.StateCommon.Content.Color1 = Color.FromArgb(90, 70, 55);
-
-
         }
 
         private void txtPassword_MouseLeave(object sender, EventArgs e)
@@ -92,32 +82,27 @@ namespace test
                 txtPassword.StateCommon.Content.Color1 = Color.FromArgb(140, 110, 90);
                 txtPassword.StateCommon.Content.Font = new Font("Segoe Script", 14, FontStyle.Bold);
             }
-
-
         }
 
-        private void txtConfirmPass_MouseEnter(object sender, EventArgs e)
+        private void txtCnfrmPass_MouseEnter(object sender, EventArgs e)
         {
-            txtConfirmPass.StateCommon.Border.Color1 = Color.FromArgb(121, 85, 72);
-            txtConfirmPass.StateCommon.Border.Color2 = Color.FromArgb(193, 154, 107);
-            txtConfirmPass.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
-            txtConfirmPass.StateCommon.Border.Rounding = 20;
-            txtConfirmPass.StateCommon.Border.Width = 2;
-            txtConfirmPass.StateCommon.Content.Color1 = Color.FromArgb(90, 70, 55);
-
+            txtCnfrmPass.StateCommon.Border.Color1 = Color.FromArgb(121, 85, 72);
+            txtCnfrmPass.StateCommon.Border.Color2 = Color.FromArgb(193, 154, 107);
+            txtCnfrmPass.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            txtCnfrmPass.StateCommon.Border.Rounding = 20;
+            txtCnfrmPass.StateCommon.Border.Width = 2;
+            txtCnfrmPass.StateCommon.Content.Color1 = Color.FromArgb(90, 70, 55);
         }
 
-        private void txtConfirmPass_MouseLeave(object sender, EventArgs e)
+        private void txtCnfrmPass_MouseLeave(object sender, EventArgs e)
         {
-            txtConfirmPass.StateCommon.Border.Color1 = Color.FromArgb(200, 180, 150);
-            txtConfirmPass.StateCommon.Border.Width = 2;
-            if (txtConfirmPass.Text == "Confirm Password")
+            txtCnfrmPass.StateCommon.Border.Color1 = Color.FromArgb(200, 180, 150);
+            txtCnfrmPass.StateCommon.Border.Width = 2;
+            if (txtCnfrmPass.Text == "Confirm Password")
             {
-                txtConfirmPass.StateCommon.Content.Color1 = Color.FromArgb(140, 110, 90);
-                txtConfirmPass.StateCommon.Content.Font = new Font("Segoe Script", 14, FontStyle.Bold);
+                txtCnfrmPass.StateCommon.Content.Color1 = Color.FromArgb(140, 110, 90);
+                txtCnfrmPass.StateCommon.Content.Font = new Font("Segoe Script", 14, FontStyle.Bold);
             }
-
-
         }
 
         private void txtFullName_Enter(object sender, EventArgs e)
@@ -129,6 +114,7 @@ namespace test
                 txtFullName.StateCommon.Content.Font = new Font("Georgia", 14, FontStyle.Bold);
             }
         }
+
         private void txtFullName_Leave(object sender, EventArgs e)
         {
             if (txtFullName.Text == "")
@@ -138,6 +124,7 @@ namespace test
                 txtFullName.StateCommon.Content.Font = new Font("Segoe Script", 14, FontStyle.Bold);
             }
         }
+
         private void txtUserName_Enter(object sender, EventArgs e)
         {
             if (txtUserName.Text == "User Name")
@@ -156,7 +143,6 @@ namespace test
                 txtUserName.StateCommon.Content.Color1 = Color.FromArgb(140, 110, 90);
                 txtUserName.StateCommon.Content.Font = new Font("Segoe Script", 14, FontStyle.Bold);
             }
-
         }
 
         private void txtPassword_Enter(object sender, EventArgs e)
@@ -182,26 +168,25 @@ namespace test
             }
         }
 
-        private void txtConfirmPass_Enter(object sender, EventArgs e)
+        private void txtCnfrmPass_Enter(object sender, EventArgs e)
         {
-            if (txtConfirmPass.Text == "Confirm Password")
+            if (txtCnfrmPass.Text == "Confirm Password")
             {
-                txtConfirmPass.Text = "";
-                txtConfirmPass.PasswordChar = '*';
-                txtConfirmPass.StateCommon.Content.Color1 = Color.FromArgb(90, 70, 55);
+                txtCnfrmPass.Text = "";
+                txtCnfrmPass.PasswordChar = '*';
+                txtCnfrmPass.StateCommon.Content.Color1 = Color.FromArgb(90, 70, 55);
 
             }
-
         }
 
-        private void txtConfirmPass_Leave(object sender, EventArgs e)
+        private void txtCnfrmPass_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtConfirmPass.Text))
+            if (string.IsNullOrWhiteSpace(txtCnfrmPass.Text))
             {
-                txtConfirmPass.Text = "Confirm Password";
-                txtConfirmPass.PasswordChar = '\0';
-                txtConfirmPass.StateCommon.Content.Color1 = Color.FromArgb(140, 110, 90);
-                txtConfirmPass.StateCommon.Content.Font = new Font("Segoe Script", 14, FontStyle.Bold);
+                txtCnfrmPass.Text = "Confirm Password";
+                txtCnfrmPass.PasswordChar = '\0';
+                txtCnfrmPass.StateCommon.Content.Color1 = Color.FromArgb(140, 110, 90);
+                txtCnfrmPass.StateCommon.Content.Font = new Font("Segoe Script", 14, FontStyle.Bold);
 
             }
         }
@@ -212,7 +197,6 @@ namespace test
             {
                 e.Handled = true;
             }
-
         }
 
         private void txtUserName_KeyPress(object sender, KeyPressEventArgs e)
@@ -231,7 +215,7 @@ namespace test
             }
         }
 
-        private void txtConfirmPass_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtCnfrmPass_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
@@ -239,80 +223,83 @@ namespace test
             }
         }
 
-        private void SignUp_Click(object sender, EventArgs e)
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            
+            string fullName = txtFullName.Text.Trim();
+            string userName = txtUserName.Text.Trim();
+            string password = txtPassword.Text;
+            string confirmPassword = txtCnfrmPass.Text;
+            byte[] imageBytes = null;
+
+            if (kryptonPictureBox1.Image != null)
+            {
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    kryptonPictureBox1.Image.Save(ms, kryptonPictureBox1.Image.RawFormat);
+                    imageBytes = ms.ToArray();
+                }
+            }
+
+            if (!Regex.IsMatch(txtFullName.Text, @"^[A-Z,a-z\s]+$"))
+            {
+                MessageBox.Show("Full Name should contain only letters and spaces.", "Invalid Full Name", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            if (String.IsNullOrWhiteSpace(fullName))
+            {
+                MessageBox.Show("Full Name cannot be empty.", "Invalid Full Name", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            if (String.IsNullOrWhiteSpace(userName))
+            {
+                MessageBox.Show("User Name cannot be empty.", "Invalid User Name", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            if (String.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show("Password cannot be empty.", "Invalid Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            if (password != confirmPassword)
+            {
+                MessageBox.Show("Password and Confirm Password Must me same .", "validation", MessageBoxButtons.OK);
+            }
+            if (kryptonPictureBox1.Image == null)
+            {
+                MessageBox.Show("Please upload a picture.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        
+
+        private void LoginPanel_Paint(object sender, PaintEventArgs e)
         {
             this.ActiveControl = null;
         }
 
-        private void SignUpPanel_Click(object sender, EventArgs e)
+        private void signup_Click(object sender, EventArgs e)
         {
             this.ActiveControl = null;
         }
 
-        private void lblSignUp_Click(object sender, EventArgs e)
+        private void lblLogIn_Click(object sender, EventArgs e)
         {
             LogIn login = new LogIn();
             login.Show();
             this.Hide();
         }
 
-        private void lblSignUp_MouseEnter(object sender, EventArgs e)
+        private void lblLogIn_MouseEnter(object sender, EventArgs e)
         {
-            lblSignUp.StateCommon.ShortText.Font = new Font(
-        lblSignUp.StateCommon.ShortText.Font,
+            lblLogIn.StateCommon.ShortText.Font = new Font(
+        lblLogIn.StateCommon.ShortText.Font,
         FontStyle.Underline
              );
         }
 
-        private void lblSignUp_MouseLeave(object sender, EventArgs e)
+        private void lblLogIn_MouseLeave(object sender, EventArgs e)
         {
-            lblSignUp.StateCommon.ShortText.Font = new Font(
-        lblSignUp.StateCommon.ShortText.Font,
+
+            lblLogIn.StateCommon.ShortText.Font = new Font(
+        lblLogIn.StateCommon.ShortText.Font,
         FontStyle.Regular
              );
-        }
-
-        private void btnSignUp_Click(object sender, EventArgs e)
-        {
-            string fullName = txtFullName.Text.Trim();
-            string userName = txtUserName.Text.Trim();
-            string password = txtPassword.Text;
-            string confirmPassword = txtConfirmPass.Text;
-            byte[] imageBytes = null;
-
-            if (ProfilePic.Image != null)
-            {
-                using (MemoryStream ms = new MemoryStream())
-                {
-                    ProfilePic.Image.Save(ms, ProfilePic.Image.RawFormat);
-                    imageBytes = ms.ToArray();
-                }
-            }
-
-                if (!Regex.IsMatch(txtFullName.Text, @"^[A-Z,a-z\s]+$"))
-                {
-                    MessageBox.Show("Full Name should contain only letters and spaces.", "Invalid Full Name", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                if (String.IsNullOrWhiteSpace(fullName))
-                {
-                    MessageBox.Show("Full Name cannot be empty.", "Invalid Full Name", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                if (String.IsNullOrWhiteSpace(userName))
-                {
-                    MessageBox.Show("User Name cannot be empty.", "Invalid User Name", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                if (String.IsNullOrWhiteSpace(password))
-                {
-                    MessageBox.Show("Password cannot be empty.", "Invalid Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                if (password != confirmPassword)
-                {
-                    MessageBox.Show("Password and Confirm Password Must me same .", "validation", MessageBoxButtons.OK);
-                }
-                if (ProfilePic.Image == null)
-                {
-                    MessageBox.Show("Please upload a picture.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
         }
     }
 }
