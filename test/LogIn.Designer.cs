@@ -176,6 +176,7 @@
             this.btnSignUp.TabStop = false;
             this.btnSignUp.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnSignUp.Values.Text = "logIn";
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // txtPassword
             // 

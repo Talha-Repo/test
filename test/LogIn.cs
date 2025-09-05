@@ -167,5 +167,11 @@ namespace test
         FontStyle.Regular 
     );
         }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            HomePage homePage = new HomePage();
+            homePage.Show();
+        }
     }
 }
