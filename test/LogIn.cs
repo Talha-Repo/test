@@ -133,6 +133,7 @@ namespace test
             signup signup = new signup();
             signup.Show();
             
+
         }
 
         private void lblSignUp_MouseEnter(object sender, EventArgs e)
@@ -172,6 +173,7 @@ namespace test
         {
             HomePage homePage = new HomePage();
             homePage.Show();
+            
         }
     }
 }

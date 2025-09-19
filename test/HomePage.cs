@@ -27,6 +27,20 @@ namespace test
         private void HomePage_Load(object sender, EventArgs e)
         {
             MakePictureBoxCircular(ProfilePic);
+            lblDate.Text = DateTime.Now.ToString("dddd, MMMM dd yyyy");
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            LogIn logIn = new LogIn();
+            logIn.Show();
+
+        }
+
+        private void btnNewEntry_Click(object sender, EventArgs e)
+        {
+            NewEntry newEntry = new NewEntry();
+            newEntry.Show();
         }
     }
 }

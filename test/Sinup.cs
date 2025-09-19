@@ -295,7 +295,8 @@ namespace test
         {
             LogIn login = new LogIn();
             login.Show();
-           
+            
+
         }
 
         private void lblLogIn_MouseEnter(object sender, EventArgs e)
