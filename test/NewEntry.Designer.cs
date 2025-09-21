@@ -39,6 +39,7 @@
             this.txtTitle = new Krypton.Toolkit.KryptonTextBox();
             this.lblDate = new Krypton.Toolkit.KryptonLabel();
             this.txtMainWrite = new Krypton.Toolkit.KryptonRichTextBox();
+            this.lblNewEntry = new Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.Panel)).BeginInit();
             this.Panel.SuspendLayout();
             this.SuspendLayout();
@@ -46,7 +47,7 @@
             // btnSave
             // 
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Location = new System.Drawing.Point(1030, 121);
+            this.btnSave.Location = new System.Drawing.Point(1030, 162);
             this.btnSave.Margin = new System.Windows.Forms.Padding(0);
             this.btnSave.Name = "btnSave";
             this.btnSave.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
@@ -122,6 +123,7 @@
             // Panel
             // 
             this.Panel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Panel.Controls.Add(this.lblNewEntry);
             this.Panel.Controls.Add(this.btnDel);
             this.Panel.Controls.Add(this.btnUnderline);
             this.Panel.Controls.Add(this.btnItalic);
@@ -142,7 +144,7 @@
             // btnDel
             // 
             this.btnDel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDel.Location = new System.Drawing.Point(1035, 521);
+            this.btnDel.Location = new System.Drawing.Point(1035, 562);
             this.btnDel.Margin = new System.Windows.Forms.Padding(0);
             this.btnDel.Name = "btnDel";
             this.btnDel.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
@@ -219,7 +221,7 @@
             // btnUnderline
             // 
             this.btnUnderline.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUnderline.Location = new System.Drawing.Point(1035, 421);
+            this.btnUnderline.Location = new System.Drawing.Point(1035, 462);
             this.btnUnderline.Margin = new System.Windows.Forms.Padding(0);
             this.btnUnderline.Name = "btnUnderline";
             this.btnUnderline.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
@@ -296,7 +298,7 @@
             // btnItalic
             // 
             this.btnItalic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnItalic.Location = new System.Drawing.Point(1035, 321);
+            this.btnItalic.Location = new System.Drawing.Point(1035, 362);
             this.btnItalic.Margin = new System.Windows.Forms.Padding(0);
             this.btnItalic.Name = "btnItalic";
             this.btnItalic.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
@@ -374,7 +376,7 @@
             // btnBold
             // 
             this.btnBold.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBold.Location = new System.Drawing.Point(1035, 221);
+            this.btnBold.Location = new System.Drawing.Point(1035, 262);
             this.btnBold.Margin = new System.Windows.Forms.Padding(0);
             this.btnBold.Name = "btnBold";
             this.btnBold.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
@@ -451,7 +453,7 @@
             // btnClear
             // 
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClear.Location = new System.Drawing.Point(1035, 621);
+            this.btnClear.Location = new System.Drawing.Point(1035, 662);
             this.btnClear.Margin = new System.Windows.Forms.Padding(0);
             this.btnClear.Name = "btnClear";
             this.btnClear.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
@@ -528,7 +530,7 @@
             // btnCancel
             // 
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Location = new System.Drawing.Point(1030, 721);
+            this.btnCancel.Location = new System.Drawing.Point(1030, 762);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(0);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
@@ -599,12 +601,12 @@
             this.btnCancel.TabIndex = 15;
             this.btnCancel.TabStop = false;
             this.btnCancel.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnCancel.Values.Text = "Cancel";
+            this.btnCancel.Values.Text = "Close";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(30, 51);
+            this.txtTitle.Location = new System.Drawing.Point(30, 86);
             this.txtTitle.Multiline = true;
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(450, 40);
@@ -626,7 +628,7 @@
             // 
             // lblDate
             // 
-            this.lblDate.Location = new System.Drawing.Point(730, 57);
+            this.lblDate.Location = new System.Drawing.Point(730, 92);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(172, 38);
             this.lblDate.StateCommon.Padding = new System.Windows.Forms.Padding(-1, -1, 20, 10);
@@ -639,7 +641,7 @@
             // txtMainWrite
             // 
             this.txtMainWrite.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtMainWrite.Location = new System.Drawing.Point(30, 111);
+            this.txtMainWrite.Location = new System.Drawing.Point(30, 146);
             this.txtMainWrite.Name = "txtMainWrite";
             this.txtMainWrite.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.txtMainWrite.Size = new System.Drawing.Size(972, 685);
@@ -649,6 +651,18 @@
             this.txtMainWrite.StateCommon.Content.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMainWrite.TabIndex = 5;
             this.txtMainWrite.Text = "";
+            // 
+            // lblNewEntry
+            // 
+            this.lblNewEntry.Location = new System.Drawing.Point(472, 3);
+            this.lblNewEntry.Name = "lblNewEntry";
+            this.lblNewEntry.Size = new System.Drawing.Size(224, 53);
+            this.lblNewEntry.StateCommon.Padding = new System.Windows.Forms.Padding(-1, -1, -1, 10);
+            this.lblNewEntry.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.lblNewEntry.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.lblNewEntry.StateCommon.ShortText.Font = new System.Drawing.Font("Gabriola", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewEntry.TabIndex = 21;
+            this.lblNewEntry.Values.Text = "New Diary Entry";
             // 
             // NewEntry
             // 
@@ -681,5 +695,6 @@
         private Krypton.Toolkit.KryptonButton btnUnderline;
         private Krypton.Toolkit.KryptonButton btnItalic;
         private Krypton.Toolkit.KryptonButton btnBold;
+        private Krypton.Toolkit.KryptonLabel lblNewEntry;
     }
 }

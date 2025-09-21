@@ -19,7 +19,7 @@ namespace test
 
         private void NewEntry_Load(object sender, EventArgs e)
         {
-            lblDate.Text = DateTime.Now.ToString("dd MMMM yyyy");
+            lblDate.Text = DateTime.Now.ToString("dddd, dd MMM yyyy");
         }
 
         private void txtTitle_Enter(object sender, EventArgs e)

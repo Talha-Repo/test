@@ -42,5 +42,11 @@ namespace test
             NewEntry newEntry = new NewEntry();
             newEntry.Show();
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            Search search = new Search();
+            search.Show();
+        }
     }
 }

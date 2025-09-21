@@ -33,6 +33,7 @@
             this.kryptonContextMenuItem4 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuItems1 = new Krypton.Toolkit.KryptonContextMenuItems();
             this.PanelMain = new Krypton.Toolkit.KryptonPanel();
+            this.PanelFill = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.Moodtracker = new Krypton.Toolkit.KryptonGroupBox();
             this.btnEmoji3 = new Krypton.Toolkit.KryptonButton();
@@ -56,9 +57,9 @@
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuItem7 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuItem5 = new Krypton.Toolkit.KryptonContextMenuItem();
-            this.PanelFill = new Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.PanelMain)).BeginInit();
             this.PanelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelFill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Moodtracker)).BeginInit();
@@ -73,7 +74,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PanelHeader)).BeginInit();
             this.PanelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PanelFill)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonContextMenuItems1
@@ -94,6 +94,16 @@
             this.PanelMain.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.PanelMain.StateCommon.Color2 = System.Drawing.Color.Transparent;
             this.PanelMain.TabIndex = 0;
+            // 
+            // PanelFill
+            // 
+            this.PanelFill.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelFill.Location = new System.Drawing.Point(285, 80);
+            this.PanelFill.Name = "PanelFill";
+            this.PanelFill.Size = new System.Drawing.Size(616, 784);
+            this.PanelFill.StateCommon.Color1 = System.Drawing.Color.Transparent;
+            this.PanelFill.StateCommon.Color2 = System.Drawing.Color.Transparent;
+            this.PanelFill.TabIndex = 3;
             // 
             // kryptonPanel1
             // 
@@ -530,6 +540,7 @@
             this.btnSearch.TabStop = false;
             this.btnSearch.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnSearch.Values.Text = "Search";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnViewAll
             // 
@@ -1005,16 +1016,6 @@
             // 
             this.kryptonContextMenuItem7.Text = "Logout";
             // 
-            // PanelFill
-            // 
-            this.PanelFill.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelFill.Location = new System.Drawing.Point(285, 80);
-            this.PanelFill.Name = "PanelFill";
-            this.PanelFill.Size = new System.Drawing.Size(616, 784);
-            this.PanelFill.StateCommon.Color1 = System.Drawing.Color.Transparent;
-            this.PanelFill.StateCommon.Color2 = System.Drawing.Color.Transparent;
-            this.PanelFill.TabIndex = 3;
-            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1028,6 +1029,7 @@
             this.Load += new System.EventHandler(this.HomePage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PanelMain)).EndInit();
             this.PanelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PanelFill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Moodtracker.Panel)).EndInit();
@@ -1043,7 +1045,6 @@
             this.PanelHeader.ResumeLayout(false);
             this.PanelHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PanelFill)).EndInit();
             this.ResumeLayout(false);
 
         }
