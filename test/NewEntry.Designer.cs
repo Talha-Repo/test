@@ -28,123 +28,136 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSave = new Krypton.Toolkit.KryptonButton();
-            this.Panel = new Krypton.Toolkit.KryptonPanel();
+            this.btnSaveNE = new Krypton.Toolkit.KryptonButton();
+            this.PanelNewEntry = new Krypton.Toolkit.KryptonPanel();
+            this.lblNewEntry = new Krypton.Toolkit.KryptonLabel();
             this.btnDel = new Krypton.Toolkit.KryptonButton();
             this.btnUnderline = new Krypton.Toolkit.KryptonButton();
             this.btnItalic = new Krypton.Toolkit.KryptonButton();
             this.btnBold = new Krypton.Toolkit.KryptonButton();
             this.btnClear = new Krypton.Toolkit.KryptonButton();
-            this.btnCancel = new Krypton.Toolkit.KryptonButton();
-            this.txtTitle = new Krypton.Toolkit.KryptonTextBox();
-            this.lblDate = new Krypton.Toolkit.KryptonLabel();
+            this.btnCloseNE = new Krypton.Toolkit.KryptonButton();
+            this.txtTitleNE = new Krypton.Toolkit.KryptonTextBox();
+            this.lblDateNE = new Krypton.Toolkit.KryptonLabel();
             this.txtMainWrite = new Krypton.Toolkit.KryptonRichTextBox();
-            this.lblNewEntry = new Krypton.Toolkit.KryptonLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.Panel)).BeginInit();
-            this.Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelNewEntry)).BeginInit();
+            this.PanelNewEntry.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnSave
+            // btnSaveNE
             // 
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Location = new System.Drawing.Point(1030, 162);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(0);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnSave.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnSave.OverrideDefault.Back.ColorAngle = 0F;
-            this.btnSave.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
-            this.btnSave.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
-            this.btnSave.OverrideDefault.Border.Rounding = 20F;
-            this.btnSave.OverrideDefault.Border.Width = 2;
-            this.btnSave.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnSave.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.btnSave.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
-            this.btnSave.Size = new System.Drawing.Size(130, 35);
-            this.btnSave.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnSave.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnSave.StateCommon.Back.ColorAngle = 0F;
-            this.btnSave.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.btnSave.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnSave.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnSave.StateCommon.Border.ColorAngle = 0F;
-            this.btnSave.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnSaveNE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveNE.Location = new System.Drawing.Point(754, 140);
+            this.btnSaveNE.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSaveNE.Name = "btnSaveNE";
+            this.btnSaveNE.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnSaveNE.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnSaveNE.OverrideDefault.Back.ColorAngle = 0F;
+            this.btnSaveNE.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnSaveNE.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnSaveNE.OverrideDefault.Border.Rounding = 20F;
+            this.btnSaveNE.OverrideDefault.Border.Width = 2;
+            this.btnSaveNE.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnSaveNE.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnSaveNE.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
+            this.btnSaveNE.Size = new System.Drawing.Size(130, 35);
+            this.btnSaveNE.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnSaveNE.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnSaveNE.StateCommon.Back.ColorAngle = 0F;
+            this.btnSaveNE.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnSaveNE.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnSaveNE.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnSaveNE.StateCommon.Border.ColorAngle = 0F;
+            this.btnSaveNE.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSave.StateCommon.Border.Rounding = 20F;
-            this.btnSave.StateCommon.Border.Width = 2;
-            this.btnSave.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnSave.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.btnSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
-            this.btnSave.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnSave.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnSave.StateNormal.Back.ColorAngle = 0F;
-            this.btnSave.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.btnSave.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
-            this.btnSave.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
-            this.btnSave.StateNormal.Border.ColorAngle = 0F;
-            this.btnSave.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnSave.StateNormal.Border.Rounding = 20F;
-            this.btnSave.StateNormal.Border.Width = 2;
-            this.btnSave.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnSave.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.btnSave.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(150)))), ((int)(((byte)(130)))));
-            this.btnSave.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnSave.StatePressed.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.btnSave.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnSave.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnSave.StatePressed.Border.ColorAngle = 0F;
-            this.btnSave.StatePressed.Border.Rounding = 20F;
-            this.btnSave.StatePressed.Border.Width = 2;
-            this.btnSave.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnSave.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.btnSave.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
-            this.btnSave.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnSave.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnSave.StateTracking.Back.ColorAngle = 0F;
-            this.btnSave.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnSave.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnSave.StateTracking.Border.ColorAngle = 0F;
-            this.btnSave.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnSaveNE.StateCommon.Border.Rounding = 20F;
+            this.btnSaveNE.StateCommon.Border.Width = 2;
+            this.btnSaveNE.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnSaveNE.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnSaveNE.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
+            this.btnSaveNE.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnSaveNE.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnSaveNE.StateNormal.Back.ColorAngle = 0F;
+            this.btnSaveNE.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnSaveNE.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnSaveNE.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnSaveNE.StateNormal.Border.ColorAngle = 0F;
+            this.btnSaveNE.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnSaveNE.StateNormal.Border.Rounding = 20F;
+            this.btnSaveNE.StateNormal.Border.Width = 2;
+            this.btnSaveNE.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnSaveNE.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnSaveNE.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveNE.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(150)))), ((int)(((byte)(130)))));
+            this.btnSaveNE.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnSaveNE.StatePressed.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnSaveNE.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnSaveNE.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnSaveNE.StatePressed.Border.ColorAngle = 0F;
+            this.btnSaveNE.StatePressed.Border.Rounding = 20F;
+            this.btnSaveNE.StatePressed.Border.Width = 2;
+            this.btnSaveNE.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnSaveNE.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnSaveNE.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
+            this.btnSaveNE.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnSaveNE.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnSaveNE.StateTracking.Back.ColorAngle = 0F;
+            this.btnSaveNE.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnSaveNE.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnSaveNE.StateTracking.Border.ColorAngle = 0F;
+            this.btnSaveNE.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSave.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnSave.StateTracking.Border.Rounding = 20F;
-            this.btnSave.StateTracking.Border.Width = 2;
-            this.btnSave.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnSave.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.btnSave.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
-            this.btnSave.TabIndex = 3;
-            this.btnSave.TabStop = false;
-            this.btnSave.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnSave.Values.Text = "Save";
+            this.btnSaveNE.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnSaveNE.StateTracking.Border.Rounding = 20F;
+            this.btnSaveNE.StateTracking.Border.Width = 2;
+            this.btnSaveNE.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnSaveNE.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnSaveNE.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
+            this.btnSaveNE.TabIndex = 3;
+            this.btnSaveNE.TabStop = false;
+            this.btnSaveNE.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnSaveNE.Values.Text = "Save";
+            this.btnSaveNE.Click += new System.EventHandler(this.btnSaveNE_Click);
             // 
-            // Panel
+            // PanelNewEntry
             // 
-            this.Panel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Panel.Controls.Add(this.lblNewEntry);
-            this.Panel.Controls.Add(this.btnDel);
-            this.Panel.Controls.Add(this.btnUnderline);
-            this.Panel.Controls.Add(this.btnItalic);
-            this.Panel.Controls.Add(this.btnBold);
-            this.Panel.Controls.Add(this.btnClear);
-            this.Panel.Controls.Add(this.btnCancel);
-            this.Panel.Controls.Add(this.txtTitle);
-            this.Panel.Controls.Add(this.lblDate);
-            this.Panel.Controls.Add(this.txtMainWrite);
-            this.Panel.Controls.Add(this.btnSave);
-            this.Panel.Location = new System.Drawing.Point(1, 0);
-            this.Panel.Name = "Panel";
-            this.Panel.Size = new System.Drawing.Size(1184, 861);
-            this.Panel.StateCommon.Color1 = System.Drawing.Color.Transparent;
-            this.Panel.StateCommon.Color2 = System.Drawing.Color.Transparent;
-            this.Panel.TabIndex = 4;
+            this.PanelNewEntry.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PanelNewEntry.Controls.Add(this.lblNewEntry);
+            this.PanelNewEntry.Controls.Add(this.btnDel);
+            this.PanelNewEntry.Controls.Add(this.btnUnderline);
+            this.PanelNewEntry.Controls.Add(this.btnItalic);
+            this.PanelNewEntry.Controls.Add(this.btnBold);
+            this.PanelNewEntry.Controls.Add(this.btnClear);
+            this.PanelNewEntry.Controls.Add(this.btnCloseNE);
+            this.PanelNewEntry.Controls.Add(this.txtTitleNE);
+            this.PanelNewEntry.Controls.Add(this.lblDateNE);
+            this.PanelNewEntry.Controls.Add(this.txtMainWrite);
+            this.PanelNewEntry.Controls.Add(this.btnSaveNE);
+            this.PanelNewEntry.Location = new System.Drawing.Point(178, 34);
+            this.PanelNewEntry.Name = "PanelNewEntry";
+            this.PanelNewEntry.Size = new System.Drawing.Size(900, 780);
+            this.PanelNewEntry.StateCommon.Color1 = System.Drawing.Color.Transparent;
+            this.PanelNewEntry.StateCommon.Color2 = System.Drawing.Color.Transparent;
+            this.PanelNewEntry.TabIndex = 4;
+            // 
+            // lblNewEntry
+            // 
+            this.lblNewEntry.Location = new System.Drawing.Point(356, 3);
+            this.lblNewEntry.Name = "lblNewEntry";
+            this.lblNewEntry.Size = new System.Drawing.Size(212, 51);
+            this.lblNewEntry.StateCommon.Padding = new System.Windows.Forms.Padding(-1, -1, -1, 10);
+            this.lblNewEntry.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.lblNewEntry.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.lblNewEntry.StateCommon.ShortText.Font = new System.Drawing.Font("Gabriola", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewEntry.TabIndex = 21;
+            this.lblNewEntry.Values.Text = "New Diary Entry";
             // 
             // btnDel
             // 
             this.btnDel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDel.Location = new System.Drawing.Point(1035, 562);
+            this.btnDel.Location = new System.Drawing.Point(759, 525);
             this.btnDel.Margin = new System.Windows.Forms.Padding(0);
             this.btnDel.Name = "btnDel";
             this.btnDel.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
@@ -215,13 +228,13 @@
             this.btnDel.TabIndex = 20;
             this.btnDel.TabStop = false;
             this.btnDel.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnDel.Values.Text = "Delete";
+            this.btnDel.Values.Text = "Bullet";
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnUnderline
             // 
             this.btnUnderline.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUnderline.Location = new System.Drawing.Point(1035, 462);
+            this.btnUnderline.Location = new System.Drawing.Point(759, 425);
             this.btnUnderline.Margin = new System.Windows.Forms.Padding(0);
             this.btnUnderline.Name = "btnUnderline";
             this.btnUnderline.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
@@ -298,7 +311,7 @@
             // btnItalic
             // 
             this.btnItalic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnItalic.Location = new System.Drawing.Point(1035, 362);
+            this.btnItalic.Location = new System.Drawing.Point(759, 325);
             this.btnItalic.Margin = new System.Windows.Forms.Padding(0);
             this.btnItalic.Name = "btnItalic";
             this.btnItalic.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
@@ -376,7 +389,7 @@
             // btnBold
             // 
             this.btnBold.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBold.Location = new System.Drawing.Point(1035, 262);
+            this.btnBold.Location = new System.Drawing.Point(759, 225);
             this.btnBold.Margin = new System.Windows.Forms.Padding(0);
             this.btnBold.Name = "btnBold";
             this.btnBold.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
@@ -453,7 +466,7 @@
             // btnClear
             // 
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClear.Location = new System.Drawing.Point(1035, 662);
+            this.btnClear.Location = new System.Drawing.Point(759, 625);
             this.btnClear.Margin = new System.Windows.Forms.Padding(0);
             this.btnClear.Name = "btnClear";
             this.btnClear.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
@@ -527,142 +540,130 @@
             this.btnClear.Values.Text = "Clear";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // btnCancel
+            // btnCloseNE
             // 
-            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Location = new System.Drawing.Point(1030, 762);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnCancel.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnCancel.OverrideDefault.Back.ColorAngle = 0F;
-            this.btnCancel.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
-            this.btnCancel.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
-            this.btnCancel.OverrideDefault.Border.Rounding = 20F;
-            this.btnCancel.OverrideDefault.Border.Width = 2;
-            this.btnCancel.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnCancel.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.btnCancel.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
-            this.btnCancel.Size = new System.Drawing.Size(130, 35);
-            this.btnCancel.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnCancel.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnCancel.StateCommon.Back.ColorAngle = 0F;
-            this.btnCancel.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.btnCancel.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnCancel.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnCancel.StateCommon.Border.ColorAngle = 0F;
-            this.btnCancel.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnCloseNE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCloseNE.Location = new System.Drawing.Point(754, 718);
+            this.btnCloseNE.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCloseNE.Name = "btnCloseNE";
+            this.btnCloseNE.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnCloseNE.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnCloseNE.OverrideDefault.Back.ColorAngle = 0F;
+            this.btnCloseNE.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnCloseNE.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnCloseNE.OverrideDefault.Border.Rounding = 20F;
+            this.btnCloseNE.OverrideDefault.Border.Width = 2;
+            this.btnCloseNE.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnCloseNE.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnCloseNE.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
+            this.btnCloseNE.Size = new System.Drawing.Size(130, 35);
+            this.btnCloseNE.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnCloseNE.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnCloseNE.StateCommon.Back.ColorAngle = 0F;
+            this.btnCloseNE.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnCloseNE.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnCloseNE.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnCloseNE.StateCommon.Border.ColorAngle = 0F;
+            this.btnCloseNE.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnCancel.StateCommon.Border.Rounding = 20F;
-            this.btnCancel.StateCommon.Border.Width = 2;
-            this.btnCancel.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnCancel.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.btnCancel.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
-            this.btnCancel.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnCancel.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnCancel.StateNormal.Back.ColorAngle = 0F;
-            this.btnCancel.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.btnCancel.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
-            this.btnCancel.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
-            this.btnCancel.StateNormal.Border.ColorAngle = 0F;
-            this.btnCancel.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnCancel.StateNormal.Border.Rounding = 20F;
-            this.btnCancel.StateNormal.Border.Width = 2;
-            this.btnCancel.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnCancel.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.btnCancel.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(150)))), ((int)(((byte)(130)))));
-            this.btnCancel.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnCancel.StatePressed.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.btnCancel.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnCancel.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnCancel.StatePressed.Border.ColorAngle = 0F;
-            this.btnCancel.StatePressed.Border.Rounding = 20F;
-            this.btnCancel.StatePressed.Border.Width = 2;
-            this.btnCancel.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnCancel.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.btnCancel.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
-            this.btnCancel.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnCancel.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnCancel.StateTracking.Back.ColorAngle = 0F;
-            this.btnCancel.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnCancel.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnCancel.StateTracking.Border.ColorAngle = 0F;
-            this.btnCancel.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnCloseNE.StateCommon.Border.Rounding = 20F;
+            this.btnCloseNE.StateCommon.Border.Width = 2;
+            this.btnCloseNE.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnCloseNE.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnCloseNE.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
+            this.btnCloseNE.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnCloseNE.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnCloseNE.StateNormal.Back.ColorAngle = 0F;
+            this.btnCloseNE.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnCloseNE.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnCloseNE.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnCloseNE.StateNormal.Border.ColorAngle = 0F;
+            this.btnCloseNE.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnCloseNE.StateNormal.Border.Rounding = 20F;
+            this.btnCloseNE.StateNormal.Border.Width = 2;
+            this.btnCloseNE.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnCloseNE.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnCloseNE.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseNE.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(150)))), ((int)(((byte)(130)))));
+            this.btnCloseNE.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnCloseNE.StatePressed.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnCloseNE.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnCloseNE.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnCloseNE.StatePressed.Border.ColorAngle = 0F;
+            this.btnCloseNE.StatePressed.Border.Rounding = 20F;
+            this.btnCloseNE.StatePressed.Border.Width = 2;
+            this.btnCloseNE.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnCloseNE.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnCloseNE.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
+            this.btnCloseNE.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnCloseNE.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnCloseNE.StateTracking.Back.ColorAngle = 0F;
+            this.btnCloseNE.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnCloseNE.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnCloseNE.StateTracking.Border.ColorAngle = 0F;
+            this.btnCloseNE.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnCancel.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnCancel.StateTracking.Border.Rounding = 20F;
-            this.btnCancel.StateTracking.Border.Width = 2;
-            this.btnCancel.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnCancel.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.btnCancel.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
-            this.btnCancel.TabIndex = 15;
-            this.btnCancel.TabStop = false;
-            this.btnCancel.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnCancel.Values.Text = "Close";
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.btnCloseNE.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnCloseNE.StateTracking.Border.Rounding = 20F;
+            this.btnCloseNE.StateTracking.Border.Width = 2;
+            this.btnCloseNE.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnCloseNE.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnCloseNE.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Georgia", 18F);
+            this.btnCloseNE.TabIndex = 15;
+            this.btnCloseNE.TabStop = false;
+            this.btnCloseNE.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnCloseNE.Values.Text = "Close";
+            this.btnCloseNE.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // txtTitle
+            // txtTitleNE
             // 
-            this.txtTitle.Location = new System.Drawing.Point(30, 86);
-            this.txtTitle.Multiline = true;
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(450, 40);
-            this.txtTitle.StateCommon.Back.Color1 = System.Drawing.Color.PapayaWhip;
-            this.txtTitle.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.txtTitle.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Local;
-            this.txtTitle.StateCommon.Border.Rounding = 20F;
-            this.txtTitle.StateCommon.Border.Width = 2;
-            this.txtTitle.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.txtTitle.StateCommon.Content.Font = new System.Drawing.Font("Georgia", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitle.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0, 0, 0, -7);
-            this.txtTitle.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.txtTitle.TabIndex = 14;
-            this.txtTitle.TabStop = false;
-            this.txtTitle.Text = "Enter Title";
-            this.txtTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtTitle.Enter += new System.EventHandler(this.txtTitle_Enter);
-            this.txtTitle.Leave += new System.EventHandler(this.txtTitle_Leave);
+            this.txtTitleNE.Location = new System.Drawing.Point(20, 76);
+            this.txtTitleNE.Multiline = true;
+            this.txtTitleNE.Name = "txtTitleNE";
+            this.txtTitleNE.Size = new System.Drawing.Size(368, 40);
+            this.txtTitleNE.StateCommon.Back.Color1 = System.Drawing.Color.PapayaWhip;
+            this.txtTitleNE.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.txtTitleNE.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Local;
+            this.txtTitleNE.StateCommon.Border.Rounding = 20F;
+            this.txtTitleNE.StateCommon.Border.Width = 2;
+            this.txtTitleNE.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.txtTitleNE.StateCommon.Content.Font = new System.Drawing.Font("Georgia", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitleNE.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0, 0, 0, -7);
+            this.txtTitleNE.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.txtTitleNE.TabIndex = 14;
+            this.txtTitleNE.TabStop = false;
+            this.txtTitleNE.Text = "Enter Title";
+            this.txtTitleNE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTitleNE.Enter += new System.EventHandler(this.txtTitle_Enter);
+            this.txtTitleNE.Leave += new System.EventHandler(this.txtTitle_Leave);
             // 
-            // lblDate
+            // lblDateNE
             // 
-            this.lblDate.Location = new System.Drawing.Point(730, 92);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(172, 38);
-            this.lblDate.StateCommon.Padding = new System.Windows.Forms.Padding(-1, -1, 20, 10);
-            this.lblDate.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.lblDate.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.lblDate.StateCommon.ShortText.Font = new System.Drawing.Font("Georgia", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.TabIndex = 13;
-            this.lblDate.Values.Text = "Todays Date ";
+            this.lblDateNE.Location = new System.Drawing.Point(461, 76);
+            this.lblDateNE.Name = "lblDateNE";
+            this.lblDateNE.Size = new System.Drawing.Size(158, 35);
+            this.lblDateNE.StateCommon.Padding = new System.Windows.Forms.Padding(-1, -1, 20, 10);
+            this.lblDateNE.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.lblDateNE.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.lblDateNE.StateCommon.ShortText.Font = new System.Drawing.Font("Georgia", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateNE.TabIndex = 13;
+            this.lblDateNE.Values.Text = "Todays Date ";
             // 
             // txtMainWrite
             // 
             this.txtMainWrite.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtMainWrite.Location = new System.Drawing.Point(30, 146);
+            this.txtMainWrite.Location = new System.Drawing.Point(20, 140);
             this.txtMainWrite.Name = "txtMainWrite";
             this.txtMainWrite.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.txtMainWrite.Size = new System.Drawing.Size(972, 685);
+            this.txtMainWrite.Size = new System.Drawing.Size(716, 613);
             this.txtMainWrite.StateCommon.Back.Color1 = System.Drawing.Color.Bisque;
             this.txtMainWrite.StateCommon.Border.Rounding = 10F;
             this.txtMainWrite.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(48)))), ((int)(((byte)(39)))));
             this.txtMainWrite.StateCommon.Content.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMainWrite.TabIndex = 5;
             this.txtMainWrite.Text = "";
-            // 
-            // lblNewEntry
-            // 
-            this.lblNewEntry.Location = new System.Drawing.Point(472, 3);
-            this.lblNewEntry.Name = "lblNewEntry";
-            this.lblNewEntry.Size = new System.Drawing.Size(224, 53);
-            this.lblNewEntry.StateCommon.Padding = new System.Windows.Forms.Padding(-1, -1, -1, 10);
-            this.lblNewEntry.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.lblNewEntry.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.lblNewEntry.StateCommon.ShortText.Font = new System.Drawing.Font("Gabriola", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewEntry.TabIndex = 21;
-            this.lblNewEntry.Values.Text = "New Diary Entry";
             // 
             // NewEntry
             // 
@@ -671,26 +672,26 @@
             this.BackColor = System.Drawing.Color.PapayaWhip;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1184, 861);
-            this.Controls.Add(this.Panel);
+            this.Controls.Add(this.PanelNewEntry);
             this.Name = "NewEntry";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewEntry";
             this.Load += new System.EventHandler(this.NewEntry_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Panel)).EndInit();
-            this.Panel.ResumeLayout(false);
-            this.Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelNewEntry)).EndInit();
+            this.PanelNewEntry.ResumeLayout(false);
+            this.PanelNewEntry.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Krypton.Toolkit.KryptonButton btnSave;
-        private Krypton.Toolkit.KryptonPanel Panel;
+        private Krypton.Toolkit.KryptonButton btnSaveNE;
+        private Krypton.Toolkit.KryptonPanel PanelNewEntry;
         private Krypton.Toolkit.KryptonRichTextBox txtMainWrite;
-        private Krypton.Toolkit.KryptonLabel lblDate;
-        private Krypton.Toolkit.KryptonTextBox txtTitle;
+        private Krypton.Toolkit.KryptonLabel lblDateNE;
+        private Krypton.Toolkit.KryptonTextBox txtTitleNE;
         private Krypton.Toolkit.KryptonButton btnClear;
-        private Krypton.Toolkit.KryptonButton btnCancel;
+        private Krypton.Toolkit.KryptonButton btnCloseNE;
         private Krypton.Toolkit.KryptonButton btnDel;
         private Krypton.Toolkit.KryptonButton btnUnderline;
         private Krypton.Toolkit.KryptonButton btnItalic;

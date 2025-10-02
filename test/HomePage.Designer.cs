@@ -34,12 +34,20 @@
             this.kryptonContextMenuItems1 = new Krypton.Toolkit.KryptonContextMenuItems();
             this.PanelMain = new Krypton.Toolkit.KryptonPanel();
             this.PanelFill = new Krypton.Toolkit.KryptonPanel();
+            this.FlowPanelrecententries = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnnew = new Krypton.Toolkit.KryptonButton();
+            this.lblrecentEntries = new Krypton.Toolkit.KryptonLabel();
+            this.flowTodos = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAddTodo = new Krypton.Toolkit.KryptonButton();
+            this.txtAddTodo = new Krypton.Toolkit.KryptonTextBox();
+            this.lblTodo = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.Moodtracker = new Krypton.Toolkit.KryptonGroupBox();
             this.btnEmoji3 = new Krypton.Toolkit.KryptonButton();
             this.btnEmoji2 = new Krypton.Toolkit.KryptonButton();
             this.btnEmoji1 = new Krypton.Toolkit.KryptonButton();
             this.DailyQuoute = new Krypton.Toolkit.KryptonGroupBox();
+            this.lblQuotes = new Krypton.Toolkit.KryptonWrapLabel();
             this.MonthCalendar = new Krypton.Toolkit.KryptonMonthCalendar();
             this.PanelLeft = new Krypton.Toolkit.KryptonPanel();
             this.btnSearch = new Krypton.Toolkit.KryptonButton();
@@ -60,6 +68,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PanelMain)).BeginInit();
             this.PanelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PanelFill)).BeginInit();
+            this.PanelFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Moodtracker)).BeginInit();
@@ -68,6 +77,7 @@
             this.Moodtracker.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DailyQuoute)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DailyQuoute.Panel)).BeginInit();
+            this.DailyQuoute.Panel.SuspendLayout();
             this.DailyQuoute.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PanelLeft)).BeginInit();
             this.PanelLeft.SuspendLayout();
@@ -97,13 +107,244 @@
             // 
             // PanelFill
             // 
+            this.PanelFill.Controls.Add(this.FlowPanelrecententries);
+            this.PanelFill.Controls.Add(this.btnnew);
+            this.PanelFill.Controls.Add(this.lblrecentEntries);
+            this.PanelFill.Controls.Add(this.flowTodos);
+            this.PanelFill.Controls.Add(this.btnAddTodo);
+            this.PanelFill.Controls.Add(this.txtAddTodo);
+            this.PanelFill.Controls.Add(this.lblTodo);
             this.PanelFill.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelFill.Location = new System.Drawing.Point(285, 80);
             this.PanelFill.Name = "PanelFill";
             this.PanelFill.Size = new System.Drawing.Size(616, 784);
             this.PanelFill.StateCommon.Color1 = System.Drawing.Color.Transparent;
-            this.PanelFill.StateCommon.Color2 = System.Drawing.Color.Transparent;
+            this.PanelFill.StateCommon.Color2 = System.Drawing.Color.Bisque;
+            this.PanelFill.StateCommon.ColorAngle = 90F;
+            this.PanelFill.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.ExpertSquareHighlight;
             this.PanelFill.TabIndex = 3;
+            // 
+            // FlowPanelrecententries
+            // 
+            this.FlowPanelrecententries.AutoScroll = true;
+            this.FlowPanelrecententries.BackColor = System.Drawing.Color.Transparent;
+            this.FlowPanelrecententries.Location = new System.Drawing.Point(14, 46);
+            this.FlowPanelrecententries.Name = "FlowPanelrecententries";
+            this.FlowPanelrecententries.Size = new System.Drawing.Size(584, 315);
+            this.FlowPanelrecententries.TabIndex = 22;
+            // 
+            // btnnew
+            // 
+            this.btnnew.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnnew.Location = new System.Drawing.Point(543, 361);
+            this.btnnew.Margin = new System.Windows.Forms.Padding(0);
+            this.btnnew.Name = "btnnew";
+            this.btnnew.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnnew.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnnew.OverrideDefault.Back.ColorAngle = 0F;
+            this.btnnew.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnnew.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnnew.OverrideDefault.Border.Rounding = 15F;
+            this.btnnew.OverrideDefault.Border.Width = 2;
+            this.btnnew.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnnew.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnnew.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Book Antiqua", 24F, System.Drawing.FontStyle.Bold);
+            this.btnnew.Size = new System.Drawing.Size(55, 40);
+            this.btnnew.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnnew.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnnew.StateCommon.Back.ColorAngle = 0F;
+            this.btnnew.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnnew.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnnew.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnnew.StateCommon.Border.ColorAngle = 0F;
+            this.btnnew.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnnew.StateCommon.Border.Rounding = 15F;
+            this.btnnew.StateCommon.Border.Width = 2;
+            this.btnnew.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnnew.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnnew.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Book Antiqua", 24F, System.Drawing.FontStyle.Bold);
+            this.btnnew.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnnew.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnnew.StateNormal.Back.ColorAngle = 0F;
+            this.btnnew.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnnew.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnnew.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnnew.StateNormal.Border.ColorAngle = 0F;
+            this.btnnew.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnnew.StateNormal.Border.Rounding = 15F;
+            this.btnnew.StateNormal.Border.Width = 2;
+            this.btnnew.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnnew.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnnew.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Book Antiqua", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnnew.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(150)))), ((int)(((byte)(130)))));
+            this.btnnew.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnnew.StatePressed.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnnew.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnnew.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnnew.StatePressed.Border.ColorAngle = 0F;
+            this.btnnew.StatePressed.Border.Rounding = 15F;
+            this.btnnew.StatePressed.Border.Width = 2;
+            this.btnnew.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnnew.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnnew.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Book Antiqua", 24F, System.Drawing.FontStyle.Bold);
+            this.btnnew.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnnew.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnnew.StateTracking.Back.ColorAngle = 0F;
+            this.btnnew.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnnew.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnnew.StateTracking.Border.ColorAngle = 0F;
+            this.btnnew.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnnew.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnnew.StateTracking.Border.Rounding = 15F;
+            this.btnnew.StateTracking.Border.Width = 2;
+            this.btnnew.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnnew.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnnew.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Book Antiqua", 24F, System.Drawing.FontStyle.Bold);
+            this.btnnew.TabIndex = 7;
+            this.btnnew.TabStop = false;
+            this.btnnew.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnnew.Values.Text = "+";
+            // 
+            // lblrecentEntries
+            // 
+            this.lblrecentEntries.Enabled = false;
+            this.lblrecentEntries.Location = new System.Drawing.Point(14, -7);
+            this.lblrecentEntries.Name = "lblrecentEntries";
+            this.lblrecentEntries.Size = new System.Drawing.Size(168, 47);
+            this.lblrecentEntries.StateCommon.Padding = new System.Windows.Forms.Padding(-1, -1, -1, 10);
+            this.lblrecentEntries.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.lblrecentEntries.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.lblrecentEntries.StateCommon.ShortText.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrecentEntries.TabIndex = 21;
+            this.lblrecentEntries.Values.Text = "Recent entries";
+            // 
+            // flowTodos
+            // 
+            this.flowTodos.AutoScroll = true;
+            this.flowTodos.BackColor = System.Drawing.Color.Transparent;
+            this.flowTodos.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowTodos.Location = new System.Drawing.Point(15, 490);
+            this.flowTodos.Name = "flowTodos";
+            this.flowTodos.Size = new System.Drawing.Size(586, 279);
+            this.flowTodos.TabIndex = 18;
+            this.flowTodos.WrapContents = false;
+            // 
+            // btnAddTodo
+            // 
+            this.btnAddTodo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddTodo.Location = new System.Drawing.Point(461, 448);
+            this.btnAddTodo.Margin = new System.Windows.Forms.Padding(0);
+            this.btnAddTodo.Name = "btnAddTodo";
+            this.btnAddTodo.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnAddTodo.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnAddTodo.OverrideDefault.Back.ColorAngle = 0F;
+            this.btnAddTodo.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnAddTodo.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnAddTodo.OverrideDefault.Border.Rounding = 20F;
+            this.btnAddTodo.OverrideDefault.Border.Width = 2;
+            this.btnAddTodo.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddTodo.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnAddTodo.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 17.25F);
+            this.btnAddTodo.Size = new System.Drawing.Size(140, 35);
+            this.btnAddTodo.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnAddTodo.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnAddTodo.StateCommon.Back.ColorAngle = 0F;
+            this.btnAddTodo.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnAddTodo.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnAddTodo.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnAddTodo.StateCommon.Border.ColorAngle = 0F;
+            this.btnAddTodo.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddTodo.StateCommon.Border.Rounding = 20F;
+            this.btnAddTodo.StateCommon.Border.Width = 2;
+            this.btnAddTodo.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddTodo.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnAddTodo.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 17.25F);
+            this.btnAddTodo.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnAddTodo.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnAddTodo.StateNormal.Back.ColorAngle = 0F;
+            this.btnAddTodo.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnAddTodo.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnAddTodo.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnAddTodo.StateNormal.Border.ColorAngle = 0F;
+            this.btnAddTodo.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddTodo.StateNormal.Border.Rounding = 20F;
+            this.btnAddTodo.StateNormal.Border.Width = 2;
+            this.btnAddTodo.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddTodo.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnAddTodo.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddTodo.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(150)))), ((int)(((byte)(130)))));
+            this.btnAddTodo.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnAddTodo.StatePressed.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnAddTodo.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnAddTodo.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnAddTodo.StatePressed.Border.ColorAngle = 0F;
+            this.btnAddTodo.StatePressed.Border.Rounding = 20F;
+            this.btnAddTodo.StatePressed.Border.Width = 2;
+            this.btnAddTodo.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddTodo.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnAddTodo.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 17.25F);
+            this.btnAddTodo.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnAddTodo.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnAddTodo.StateTracking.Back.ColorAngle = 0F;
+            this.btnAddTodo.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnAddTodo.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnAddTodo.StateTracking.Border.ColorAngle = 0F;
+            this.btnAddTodo.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddTodo.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddTodo.StateTracking.Border.Rounding = 20F;
+            this.btnAddTodo.StateTracking.Border.Width = 2;
+            this.btnAddTodo.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddTodo.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnAddTodo.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 17.25F);
+            this.btnAddTodo.TabIndex = 7;
+            this.btnAddTodo.TabStop = false;
+            this.btnAddTodo.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnAddTodo.Values.Text = "Add Task";
+            this.btnAddTodo.Click += new System.EventHandler(this.btnAddTodo_Click);
+            // 
+            // txtAddTodo
+            // 
+            this.txtAddTodo.Location = new System.Drawing.Point(15, 448);
+            this.txtAddTodo.Multiline = true;
+            this.txtAddTodo.Name = "txtAddTodo";
+            this.txtAddTodo.Size = new System.Drawing.Size(432, 35);
+            this.txtAddTodo.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.txtAddTodo.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Local;
+            this.txtAddTodo.StateCommon.Border.Rounding = 20F;
+            this.txtAddTodo.StateCommon.Border.Width = 2;
+            this.txtAddTodo.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.txtAddTodo.StateCommon.Content.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddTodo.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0, 0, 0, -7);
+            this.txtAddTodo.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.txtAddTodo.TabIndex = 16;
+            this.txtAddTodo.TabStop = false;
+            this.txtAddTodo.Text = "Add Tasks";
+            this.txtAddTodo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAddTodo.Enter += new System.EventHandler(this.txtAddTodo_Enter);
+            this.txtAddTodo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAddTodo_KeyPress);
+            this.txtAddTodo.Leave += new System.EventHandler(this.txtAddTodo_Leave);
+            this.txtAddTodo.MouseEnter += new System.EventHandler(this.txtAddTodo_MouseEnter);
+            this.txtAddTodo.MouseLeave += new System.EventHandler(this.txtAddTodo_MouseLeave);
+            // 
+            // lblTodo
+            // 
+            this.lblTodo.Location = new System.Drawing.Point(15, 396);
+            this.lblTodo.Name = "lblTodo";
+            this.lblTodo.Size = new System.Drawing.Size(176, 47);
+            this.lblTodo.StateCommon.Padding = new System.Windows.Forms.Padding(-1, -1, -1, 10);
+            this.lblTodo.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.lblTodo.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.lblTodo.StateCommon.ShortText.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTodo.TabIndex = 15;
+            this.lblTodo.Values.Text = "My Todo Tasks";
             // 
             // kryptonPanel1
             // 
@@ -378,14 +619,32 @@
             // DailyQuoute
             // 
             this.DailyQuoute.Location = new System.Drawing.Point(7, 342);
+            // 
+            // DailyQuoute.Panel
+            // 
+            this.DailyQuoute.Panel.Controls.Add(this.lblQuotes);
             this.DailyQuoute.Size = new System.Drawing.Size(265, 100);
             this.DailyQuoute.StateCommon.Back.Color1 = System.Drawing.Color.Bisque;
             this.DailyQuoute.StateCommon.Back.Color2 = System.Drawing.Color.Bisque;
+            this.DailyQuoute.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
             this.DailyQuoute.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
             this.DailyQuoute.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
             this.DailyQuoute.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DailyQuoute.TabIndex = 1;
             this.DailyQuoute.Values.Heading = "Quote Of The Day";
+            // 
+            // lblQuotes
+            // 
+            this.lblQuotes.AutoSize = false;
+            this.lblQuotes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblQuotes.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
+            this.lblQuotes.Location = new System.Drawing.Point(0, 0);
+            this.lblQuotes.Name = "lblQuotes";
+            this.lblQuotes.Size = new System.Drawing.Size(261, 63);
+            this.lblQuotes.StateCommon.Font = new System.Drawing.Font("Georgia", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuotes.StateCommon.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.lblQuotes.Text = "Quotes";
+            this.lblQuotes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MonthCalendar
             // 
@@ -396,6 +655,8 @@
             this.MonthCalendar.HeaderStyle = Krypton.Toolkit.HeaderStyle.Primary;
             this.MonthCalendar.Location = new System.Drawing.Point(7, 60);
             this.MonthCalendar.Name = "MonthCalendar";
+            this.MonthCalendar.SelectionEnd = new System.DateTime(2025, 9, 25, 0, 0, 0, 0);
+            this.MonthCalendar.SelectionStart = new System.DateTime(2025, 9, 25, 0, 0, 0, 0);
             this.MonthCalendar.Size = new System.Drawing.Size(265, 232);
             this.MonthCalendar.StateCheckedNormal.Day.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
             this.MonthCalendar.StateCheckedNormal.Day.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
@@ -446,6 +707,7 @@
             this.MonthCalendar.StateTracking.Day.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.MonthCalendar.StateTracking.Day.Content.ShortText.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
             this.MonthCalendar.TabIndex = 0;
+            this.MonthCalendar.TodayDate = new System.DateTime(2025, 9, 25, 0, 0, 0, 0);
             // 
             // PanelLeft
             // 
@@ -617,6 +879,7 @@
             this.btnViewAll.TabStop = false;
             this.btnViewAll.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnViewAll.Values.Text = "View All";
+            this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
             // 
             // btnSettings
             // 
@@ -769,6 +1032,7 @@
             this.btnEditProfile.TabStop = false;
             this.btnEditProfile.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnEditProfile.Values.Text = "Edit Profile";
+            this.btnEditProfile.Click += new System.EventHandler(this.btnEditProfile_Click);
             // 
             // btnNewEntry
             // 
@@ -941,7 +1205,7 @@
             // 
             // lblDate
             // 
-            this.lblDate.Location = new System.Drawing.Point(505, 45);
+            this.lblDate.Location = new System.Drawing.Point(469, 45);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(144, 33);
             this.lblDate.StateCommon.Padding = new System.Windows.Forms.Padding(-1, -1, 20, 10);
@@ -968,6 +1232,7 @@
             this.ProfilePic.Location = new System.Drawing.Point(1114, 15);
             this.ProfilePic.Name = "ProfilePic";
             this.ProfilePic.Size = new System.Drawing.Size(50, 50);
+            this.ProfilePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ProfilePic.TabIndex = 0;
             this.ProfilePic.TabStop = false;
             // 
@@ -1030,6 +1295,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PanelMain)).EndInit();
             this.PanelMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PanelFill)).EndInit();
+            this.PanelFill.ResumeLayout(false);
+            this.PanelFill.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Moodtracker.Panel)).EndInit();
@@ -1037,6 +1304,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Moodtracker)).EndInit();
             this.Moodtracker.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DailyQuoute.Panel)).EndInit();
+            this.DailyQuoute.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DailyQuoute)).EndInit();
             this.DailyQuoute.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PanelLeft)).EndInit();
@@ -1079,5 +1347,13 @@
         private Krypton.Toolkit.KryptonButton btnEmoji3;
         private Krypton.Toolkit.KryptonButton btnEmoji2;
         private Krypton.Toolkit.KryptonPanel PanelFill;
+        private Krypton.Toolkit.KryptonWrapLabel lblQuotes;
+        private Krypton.Toolkit.KryptonLabel lblTodo;
+        private Krypton.Toolkit.KryptonTextBox txtAddTodo;
+        private Krypton.Toolkit.KryptonButton btnAddTodo;
+        private System.Windows.Forms.FlowLayoutPanel flowTodos;
+        private Krypton.Toolkit.KryptonButton btnnew;
+        private Krypton.Toolkit.KryptonLabel lblrecentEntries;
+        private System.Windows.Forms.FlowLayoutPanel FlowPanelrecententries;
     }
 }

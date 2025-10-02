@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -150,8 +151,9 @@ namespace test
             if (txtPassword.Text == "Password")
             {
                 txtPassword.Text = "";
-                txtPassword.PasswordChar = '*';
+                
                 txtPassword.StateCommon.Content.Color1 = Color.FromArgb(90, 70, 55);
+                txtPassword.StateCommon.Content.Font = new Font("Georgia", 14, FontStyle.Bold);
 
             }
         }
@@ -161,7 +163,7 @@ namespace test
             if (string.IsNullOrWhiteSpace(txtPassword.Text))
             {
                 txtPassword.Text = "Password";
-                txtPassword.PasswordChar = '\0';
+                
                 txtPassword.StateCommon.Content.Color1 = Color.FromArgb(140, 110, 90);
                 txtPassword.StateCommon.Content.Font = new Font("Segoe Script", 14, FontStyle.Bold);
 
@@ -184,7 +186,7 @@ namespace test
             if (string.IsNullOrWhiteSpace(txtCnfrmPass.Text))
             {
                 txtCnfrmPass.Text = "Confirm Password";
-                txtCnfrmPass.PasswordChar = '\0';
+               
                 txtCnfrmPass.StateCommon.Content.Color1 = Color.FromArgb(140, 110, 90);
                 txtCnfrmPass.StateCommon.Content.Font = new Font("Segoe Script", 14, FontStyle.Bold);
 
@@ -225,7 +227,7 @@ namespace test
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            
+
             string fullName = txtFullName.Text.Trim();
             string userName = txtUserName.Text.Trim();
             string password = txtPassword.Text;
@@ -244,43 +246,66 @@ namespace test
             if (!Regex.IsMatch(txtFullName.Text, @"^[A-Z,a-z\s]+$"))
             {
                 MessageBox.Show("Full Name should contain only letters and spaces.", "Invalid Full Name", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
+
             if (String.IsNullOrWhiteSpace(fullName))
             {
                 MessageBox.Show("Full Name cannot be empty.", "Invalid Full Name", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
             if (String.IsNullOrWhiteSpace(userName))
             {
                 MessageBox.Show("User Name cannot be empty.", "Invalid User Name", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
             if (String.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("Password cannot be empty.", "Invalid Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
             if (password != confirmPassword)
             {
                 MessageBox.Show("Password and Confirm Password Must me same .", "validation", MessageBoxButtons.OK);
+                return;
             }
             if (kryptonPictureBox1.Image == null)
             {
                 MessageBox.Show("Please upload a picture.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            if(password !=  confirmPassword)
+            
+
+            using (MySqlConnection conn = DataBase.Connection())
             {
-                MessageBox.Show("Password and Confirm Password Must me same .", "validation", MessageBoxButtons.OK);
+                conn.Open();
+                string query = "INSERT INTO Users (FullName, UserName, Password, ProfilePic) " +
+                               "VALUES (@FullName, @UserName, @Password, @ProfilePic)";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@FullName", fullName);
+                    cmd.Parameters.AddWithValue("@UserName", userName);
+                    cmd.Parameters.AddWithValue("@Password", password); 
+                    cmd.Parameters.AddWithValue("@ProfilePic", imageBytes);
+
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("User registered successfully!", "Success",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LogIn login = new LogIn();
+                        login.Show();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message, "Database Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
-
-         
-
-
-
-
-
-
         }
-
-        
-
+            
         private void LoginPanel_Paint(object sender, PaintEventArgs e)
         {
             this.ActiveControl = null;
@@ -332,5 +357,16 @@ namespace test
                 kryptonPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
+
+
+
+
+
+
+
+
+
+
+
     }
 }

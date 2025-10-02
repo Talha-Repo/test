@@ -35,8 +35,17 @@
             this.btnSignUp = new Krypton.Toolkit.KryptonButton();
             this.txtPassword = new Krypton.Toolkit.KryptonTextBox();
             this.txtUserName = new Krypton.Toolkit.KryptonTextBox();
+            this.PanelForgetPass = new Krypton.Toolkit.KryptonPanel();
+            this.txtCnfrmNewPass = new Krypton.Toolkit.KryptonTextBox();
+            this.lblForgetpass = new Krypton.Toolkit.KryptonLabel();
+            this.lblBack = new Krypton.Toolkit.KryptonLabel();
+            this.btnConfirm = new Krypton.Toolkit.KryptonButton();
+            this.txtNewPass = new Krypton.Toolkit.KryptonTextBox();
+            this.txtUserNameFP = new Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.LoginPanel)).BeginInit();
             this.LoginPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelForgetPass)).BeginInit();
+            this.PanelForgetPass.SuspendLayout();
             this.SuspendLayout();
             // 
             // LoginPanel
@@ -51,7 +60,7 @@
             this.LoginPanel.Controls.Add(this.txtUserName);
             this.LoginPanel.Location = new System.Drawing.Point(350, 127);
             this.LoginPanel.Name = "LoginPanel";
-            this.LoginPanel.Size = new System.Drawing.Size(500, 606);
+            this.LoginPanel.Size = new System.Drawing.Size(500, 646);
             this.LoginPanel.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.LoginPanel.StateCommon.Color2 = System.Drawing.Color.AntiqueWhite;
             this.LoginPanel.StateCommon.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Control;
@@ -99,6 +108,7 @@
             this.lblForgotPass.TabIndex = 1;
             this.lblForgotPass.TabStop = false;
             this.lblForgotPass.Values.Text = "Forgot Password?\r\n\r\n";
+            this.lblForgotPass.Click += new System.EventHandler(this.lblForgotPass_Click);
             this.lblForgotPass.MouseEnter += new System.EventHandler(this.lblForgotPass_MouseEnter);
             this.lblForgotPass.MouseLeave += new System.EventHandler(this.lblForgotPass_MouseLeave);
             // 
@@ -226,6 +236,183 @@
             this.txtUserName.MouseEnter += new System.EventHandler(this.txtUserName_MouseEnter);
             this.txtUserName.MouseLeave += new System.EventHandler(this.txtUserName_MouseLeave);
             // 
+            // PanelForgetPass
+            // 
+            this.PanelForgetPass.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PanelForgetPass.AutoSize = true;
+            this.PanelForgetPass.Controls.Add(this.txtCnfrmNewPass);
+            this.PanelForgetPass.Controls.Add(this.lblForgetpass);
+            this.PanelForgetPass.Controls.Add(this.lblBack);
+            this.PanelForgetPass.Controls.Add(this.btnConfirm);
+            this.PanelForgetPass.Controls.Add(this.txtNewPass);
+            this.PanelForgetPass.Controls.Add(this.txtUserNameFP);
+            this.PanelForgetPass.Location = new System.Drawing.Point(12, 140);
+            this.PanelForgetPass.Name = "PanelForgetPass";
+            this.PanelForgetPass.Size = new System.Drawing.Size(500, 643);
+            this.PanelForgetPass.StateCommon.Color1 = System.Drawing.Color.Transparent;
+            this.PanelForgetPass.StateCommon.Color2 = System.Drawing.Color.AntiqueWhite;
+            this.PanelForgetPass.StateCommon.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Control;
+            this.PanelForgetPass.StateCommon.ColorAngle = -90F;
+            this.PanelForgetPass.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Rounding2;
+            this.PanelForgetPass.TabIndex = 11;
+            // 
+            // txtCnfrmNewPass
+            // 
+            this.txtCnfrmNewPass.Location = new System.Drawing.Point(100, 290);
+            this.txtCnfrmNewPass.Multiline = true;
+            this.txtCnfrmNewPass.Name = "txtCnfrmNewPass";
+            this.txtCnfrmNewPass.Size = new System.Drawing.Size(300, 40);
+            this.txtCnfrmNewPass.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.txtCnfrmNewPass.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Local;
+            this.txtCnfrmNewPass.StateCommon.Border.Rounding = 20F;
+            this.txtCnfrmNewPass.StateCommon.Border.Width = 2;
+            this.txtCnfrmNewPass.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.txtCnfrmNewPass.StateCommon.Content.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCnfrmNewPass.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0, 0, 0, -7);
+            this.txtCnfrmNewPass.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.txtCnfrmNewPass.TabIndex = 11;
+            this.txtCnfrmNewPass.TabStop = false;
+            this.txtCnfrmNewPass.Text = "Confirm Password";
+            this.txtCnfrmNewPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblForgetpass
+            // 
+            this.lblForgetpass.Location = new System.Drawing.Point(116, 58);
+            this.lblForgetpass.Name = "lblForgetpass";
+            this.lblForgetpass.Size = new System.Drawing.Size(263, 47);
+            this.lblForgetpass.StateCommon.Padding = new System.Windows.Forms.Padding(-1, -1, -1, 10);
+            this.lblForgetpass.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.lblForgetpass.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.lblForgetpass.StateCommon.ShortText.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblForgetpass.TabIndex = 10;
+            this.lblForgetpass.Values.Text = "Change Your Password";
+            // 
+            // lblBack
+            // 
+            this.lblBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblBack.Location = new System.Drawing.Point(178, 431);
+            this.lblBack.Name = "lblBack";
+            this.lblBack.Size = new System.Drawing.Size(140, 25);
+            this.lblBack.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.lblBack.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.lblBack.StateCommon.ShortText.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold);
+            this.lblBack.TabIndex = 9;
+            this.lblBack.Values.Text = "Back To SignUp?\r\n";
+            this.lblBack.Click += new System.EventHandler(this.lblBack_Click);
+            // 
+            // btnConfirm
+            // 
+            this.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfirm.Location = new System.Drawing.Point(100, 360);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnConfirm.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnConfirm.OverrideDefault.Back.ColorAngle = 0F;
+            this.btnConfirm.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnConfirm.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnConfirm.OverrideDefault.Border.Rounding = 20F;
+            this.btnConfirm.OverrideDefault.Border.Width = 2;
+            this.btnConfirm.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnConfirm.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnConfirm.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 18F);
+            this.btnConfirm.Size = new System.Drawing.Size(300, 45);
+            this.btnConfirm.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnConfirm.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnConfirm.StateCommon.Back.ColorAngle = 0F;
+            this.btnConfirm.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnConfirm.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnConfirm.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnConfirm.StateCommon.Border.ColorAngle = 0F;
+            this.btnConfirm.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnConfirm.StateCommon.Border.Rounding = 20F;
+            this.btnConfirm.StateCommon.Border.Width = 2;
+            this.btnConfirm.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnConfirm.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnConfirm.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 18F);
+            this.btnConfirm.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnConfirm.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnConfirm.StateNormal.Back.ColorAngle = 0F;
+            this.btnConfirm.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnConfirm.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnConfirm.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnConfirm.StateNormal.Border.ColorAngle = 0F;
+            this.btnConfirm.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnConfirm.StateNormal.Border.Rounding = 20F;
+            this.btnConfirm.StateNormal.Border.Width = 2;
+            this.btnConfirm.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnConfirm.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnConfirm.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(150)))), ((int)(((byte)(130)))));
+            this.btnConfirm.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnConfirm.StatePressed.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnConfirm.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnConfirm.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnConfirm.StatePressed.Border.ColorAngle = 0F;
+            this.btnConfirm.StatePressed.Border.Rounding = 20F;
+            this.btnConfirm.StatePressed.Border.Width = 2;
+            this.btnConfirm.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnConfirm.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnConfirm.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 18F);
+            this.btnConfirm.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnConfirm.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnConfirm.StateTracking.Back.ColorAngle = 0F;
+            this.btnConfirm.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnConfirm.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnConfirm.StateTracking.Border.ColorAngle = 0F;
+            this.btnConfirm.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnConfirm.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnConfirm.StateTracking.Border.Rounding = 20F;
+            this.btnConfirm.StateTracking.Border.Width = 2;
+            this.btnConfirm.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnConfirm.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnConfirm.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 18F);
+            this.btnConfirm.TabIndex = 0;
+            this.btnConfirm.TabStop = false;
+            this.btnConfirm.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnConfirm.Values.Text = "Save";
+            // 
+            // txtNewPass
+            // 
+            this.txtNewPass.Location = new System.Drawing.Point(100, 220);
+            this.txtNewPass.Multiline = true;
+            this.txtNewPass.Name = "txtNewPass";
+            this.txtNewPass.Size = new System.Drawing.Size(300, 40);
+            this.txtNewPass.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.txtNewPass.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Local;
+            this.txtNewPass.StateCommon.Border.Rounding = 20F;
+            this.txtNewPass.StateCommon.Border.Width = 2;
+            this.txtNewPass.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.txtNewPass.StateCommon.Content.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewPass.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0, 0, 0, -7);
+            this.txtNewPass.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.txtNewPass.TabIndex = 3;
+            this.txtNewPass.TabStop = false;
+            this.txtNewPass.Text = "New Password";
+            this.txtNewPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtUserNameFP
+            // 
+            this.txtUserNameFP.Location = new System.Drawing.Point(100, 150);
+            this.txtUserNameFP.Multiline = true;
+            this.txtUserNameFP.Name = "txtUserNameFP";
+            this.txtUserNameFP.Size = new System.Drawing.Size(300, 40);
+            this.txtUserNameFP.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.txtUserNameFP.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Local;
+            this.txtUserNameFP.StateCommon.Border.Rounding = 20F;
+            this.txtUserNameFP.StateCommon.Border.Width = 2;
+            this.txtUserNameFP.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.txtUserNameFP.StateCommon.Content.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtUserNameFP.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0, 0, 0, -7);
+            this.txtUserNameFP.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.txtUserNameFP.TabIndex = 2;
+            this.txtUserNameFP.TabStop = false;
+            this.txtUserNameFP.Text = "User Name";
+            this.txtUserNameFP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -233,15 +420,20 @@
             this.BackgroundImage = global::test.Properties.Resources._1755186696637;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1184, 861);
+            this.Controls.Add(this.PanelForgetPass);
             this.Controls.Add(this.LoginPanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogIn";
+            this.Load += new System.EventHandler(this.LogIn_Load);
             this.Click += new System.EventHandler(this.LogIn_Click);
             ((System.ComponentModel.ISupportInitialize)(this.LoginPanel)).EndInit();
             this.LoginPanel.ResumeLayout(false);
             this.LoginPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelForgetPass)).EndInit();
+            this.PanelForgetPass.ResumeLayout(false);
+            this.PanelForgetPass.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,5 +448,12 @@
         private Krypton.Toolkit.KryptonButton btnSignUp;
         private Krypton.Toolkit.KryptonTextBox txtPassword;
         private Krypton.Toolkit.KryptonTextBox txtUserName;
+        private Krypton.Toolkit.KryptonPanel PanelForgetPass;
+        private Krypton.Toolkit.KryptonTextBox txtCnfrmNewPass;
+        private Krypton.Toolkit.KryptonLabel lblForgetpass;
+        private Krypton.Toolkit.KryptonLabel lblBack;
+        private Krypton.Toolkit.KryptonButton btnConfirm;
+        private Krypton.Toolkit.KryptonTextBox txtNewPass;
+        private Krypton.Toolkit.KryptonTextBox txtUserNameFP;
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.EditPanel = new Krypton.Toolkit.KryptonPanel();
+            this.btnClose = new Krypton.Toolkit.KryptonButton();
             this.kryptonPictureBox1 = new Krypton.Toolkit.KryptonPictureBox();
             this.btnBrowse = new Krypton.Toolkit.KryptonButton();
             this.txtCnfrmPass = new Krypton.Toolkit.KryptonTextBox();
@@ -38,7 +39,6 @@
             this.btnSave = new Krypton.Toolkit.KryptonButton();
             this.txtPassword = new Krypton.Toolkit.KryptonTextBox();
             this.txtUserName = new Krypton.Toolkit.KryptonTextBox();
-            this.btnClose = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.EditPanel)).BeginInit();
             this.EditPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox1)).BeginInit();
@@ -67,6 +67,82 @@
             this.EditPanel.StateCommon.ColorAngle = -90F;
             this.EditPanel.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Rounding2;
             this.EditPanel.TabIndex = 3;
+            this.EditPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.EditPanel_Paint);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Location = new System.Drawing.Point(100, 548);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnClose.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnClose.OverrideDefault.Back.ColorAngle = 0F;
+            this.btnClose.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnClose.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnClose.OverrideDefault.Border.Rounding = 20F;
+            this.btnClose.OverrideDefault.Border.Width = 2;
+            this.btnClose.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnClose.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnClose.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 18F);
+            this.btnClose.Size = new System.Drawing.Size(300, 45);
+            this.btnClose.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnClose.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnClose.StateCommon.Back.ColorAngle = 0F;
+            this.btnClose.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnClose.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnClose.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnClose.StateCommon.Border.ColorAngle = 0F;
+            this.btnClose.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnClose.StateCommon.Border.Rounding = 20F;
+            this.btnClose.StateCommon.Border.Width = 2;
+            this.btnClose.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnClose.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnClose.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 18F);
+            this.btnClose.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnClose.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnClose.StateNormal.Back.ColorAngle = 0F;
+            this.btnClose.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnClose.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnClose.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
+            this.btnClose.StateNormal.Border.ColorAngle = 0F;
+            this.btnClose.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnClose.StateNormal.Border.Rounding = 20F;
+            this.btnClose.StateNormal.Border.Width = 2;
+            this.btnClose.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnClose.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnClose.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(150)))), ((int)(((byte)(130)))));
+            this.btnClose.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnClose.StatePressed.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnClose.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnClose.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnClose.StatePressed.Border.ColorAngle = 0F;
+            this.btnClose.StatePressed.Border.Rounding = 20F;
+            this.btnClose.StatePressed.Border.Width = 2;
+            this.btnClose.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnClose.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnClose.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 18F);
+            this.btnClose.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnClose.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
+            this.btnClose.StateTracking.Back.ColorAngle = 0F;
+            this.btnClose.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnClose.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
+            this.btnClose.StateTracking.Border.ColorAngle = 0F;
+            this.btnClose.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnClose.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnClose.StateTracking.Border.Rounding = 20F;
+            this.btnClose.StateTracking.Border.Width = 2;
+            this.btnClose.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnClose.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btnClose.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 18F);
+            this.btnClose.TabIndex = 15;
+            this.btnClose.TabStop = false;
+            this.btnClose.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnClose.Values.Text = "CLOSE";
             // 
             // kryptonPictureBox1
             // 
@@ -165,13 +241,18 @@
             this.txtCnfrmPass.StateCommon.Border.Rounding = 20F;
             this.txtCnfrmPass.StateCommon.Border.Width = 2;
             this.txtCnfrmPass.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.txtCnfrmPass.StateCommon.Content.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCnfrmPass.StateCommon.Content.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold);
             this.txtCnfrmPass.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0, 0, 0, -7);
             this.txtCnfrmPass.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.txtCnfrmPass.TabIndex = 12;
             this.txtCnfrmPass.TabStop = false;
             this.txtCnfrmPass.Text = "Confirm Password";
             this.txtCnfrmPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCnfrmPass.Enter += new System.EventHandler(this.txtCnfrmPass_Enter);
+            this.txtCnfrmPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCnfrmPass_KeyPress);
+            this.txtCnfrmPass.Leave += new System.EventHandler(this.txtCnfrmPass_Leave);
+            this.txtCnfrmPass.MouseEnter += new System.EventHandler(this.txtCnfrmPass_MouseEnter);
+            this.txtCnfrmPass.MouseLeave += new System.EventHandler(this.txtCnfrmPass_MouseLeave);
             // 
             // txtFullName
             // 
@@ -184,13 +265,18 @@
             this.txtFullName.StateCommon.Border.Rounding = 20F;
             this.txtFullName.StateCommon.Border.Width = 2;
             this.txtFullName.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.txtFullName.StateCommon.Content.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtFullName.StateCommon.Content.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFullName.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0, 0, 0, -7);
             this.txtFullName.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.txtFullName.TabIndex = 11;
             this.txtFullName.TabStop = false;
             this.txtFullName.Text = "Full Name";
             this.txtFullName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFullName.Enter += new System.EventHandler(this.txtFullName_Enter);
+            this.txtFullName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFullName_KeyPress);
+            this.txtFullName.Leave += new System.EventHandler(this.txtFullName_Leave);
+            this.txtFullName.MouseEnter += new System.EventHandler(this.txtFullName_MouseEnter);
+            this.txtFullName.MouseLeave += new System.EventHandler(this.txtFullName_MouseLeave);
             // 
             // lblEditProfile
             // 
@@ -291,6 +377,7 @@
             this.btnSave.TabStop = false;
             this.btnSave.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnSave.Values.Text = "SAVE";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtPassword
             // 
@@ -303,13 +390,18 @@
             this.txtPassword.StateCommon.Border.Rounding = 20F;
             this.txtPassword.StateCommon.Border.Width = 2;
             this.txtPassword.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.txtPassword.StateCommon.Content.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.StateCommon.Content.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold);
             this.txtPassword.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0, 0, 0, -7);
             this.txtPassword.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.txtPassword.TabIndex = 3;
             this.txtPassword.TabStop = false;
             this.txtPassword.Text = "New Password";
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword_KeyPress);
+            this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
+            this.txtPassword.MouseEnter += new System.EventHandler(this.txtPassword_MouseEnter);
+            this.txtPassword.MouseLeave += new System.EventHandler(this.txtPassword_MouseLeave);
             // 
             // txtUserName
             // 
@@ -322,88 +414,18 @@
             this.txtUserName.StateCommon.Border.Rounding = 20F;
             this.txtUserName.StateCommon.Border.Width = 2;
             this.txtUserName.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.txtUserName.StateCommon.Content.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtUserName.StateCommon.Content.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold);
             this.txtUserName.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0, 0, 0, -7);
             this.txtUserName.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.txtUserName.TabIndex = 2;
             this.txtUserName.TabStop = false;
             this.txtUserName.Text = "User Name";
             this.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Location = new System.Drawing.Point(100, 548);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnClose.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnClose.OverrideDefault.Back.ColorAngle = 0F;
-            this.btnClose.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
-            this.btnClose.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
-            this.btnClose.OverrideDefault.Border.Rounding = 20F;
-            this.btnClose.OverrideDefault.Border.Width = 2;
-            this.btnClose.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnClose.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.btnClose.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 18F);
-            this.btnClose.Size = new System.Drawing.Size(300, 45);
-            this.btnClose.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnClose.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnClose.StateCommon.Back.ColorAngle = 0F;
-            this.btnClose.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.btnClose.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnClose.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnClose.StateCommon.Border.ColorAngle = 0F;
-            this.btnClose.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnClose.StateCommon.Border.Rounding = 20F;
-            this.btnClose.StateCommon.Border.Width = 2;
-            this.btnClose.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnClose.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.btnClose.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 18F);
-            this.btnClose.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnClose.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnClose.StateNormal.Back.ColorAngle = 0F;
-            this.btnClose.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.btnClose.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
-            this.btnClose.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(85)))), ((int)(((byte)(72)))));
-            this.btnClose.StateNormal.Border.ColorAngle = 0F;
-            this.btnClose.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnClose.StateNormal.Border.Rounding = 20F;
-            this.btnClose.StateNormal.Border.Width = 2;
-            this.btnClose.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnClose.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.btnClose.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(150)))), ((int)(((byte)(130)))));
-            this.btnClose.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnClose.StatePressed.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.btnClose.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnClose.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnClose.StatePressed.Border.ColorAngle = 0F;
-            this.btnClose.StatePressed.Border.Rounding = 20F;
-            this.btnClose.StatePressed.Border.Width = 2;
-            this.btnClose.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnClose.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.btnClose.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 18F);
-            this.btnClose.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnClose.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(110)))), ((int)(((byte)(90)))));
-            this.btnClose.StateTracking.Back.ColorAngle = 0F;
-            this.btnClose.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnClose.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(150)))));
-            this.btnClose.StateTracking.Border.ColorAngle = 0F;
-            this.btnClose.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnClose.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnClose.StateTracking.Border.Rounding = 20F;
-            this.btnClose.StateTracking.Border.Width = 2;
-            this.btnClose.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnClose.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.btnClose.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 18F);
-            this.btnClose.TabIndex = 15;
-            this.btnClose.TabStop = false;
-            this.btnClose.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnClose.Values.Text = "CLOSE";
+            this.txtUserName.Enter += new System.EventHandler(this.txtUserName_Enter);
+            this.txtUserName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUserName_KeyPress);
+            this.txtUserName.Leave += new System.EventHandler(this.txtUserName_Leave);
+            this.txtUserName.MouseEnter += new System.EventHandler(this.txtUserName_MouseEnter);
+            this.txtUserName.MouseLeave += new System.EventHandler(this.txtUserName_MouseLeave);
             // 
             // EditProfile
             // 
@@ -416,7 +438,8 @@
             this.Controls.Add(this.EditPanel);
             this.Name = "EditProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EditProfile";
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.EditProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.EditPanel)).EndInit();
             this.EditPanel.ResumeLayout(false);
             this.EditPanel.PerformLayout();

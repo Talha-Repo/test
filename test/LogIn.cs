@@ -1,8 +1,10 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -132,8 +134,6 @@ namespace test
         {
             signup signup = new signup();
             signup.Show();
-            
-
         }
 
         private void lblSignUp_MouseEnter(object sender, EventArgs e)
@@ -171,9 +171,73 @@ namespace test
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            HomePage homePage = new HomePage();
-            homePage.Show();
-            
+            using (MySqlConnection conn = DataBase.Connection())
+            {
+                conn.Open();
+
+                // ✅ Also select UserID along with ProfilePic
+                string query = "SELECT UserID, ProfilePic FROM Users WHERE UserName = @UserName AND Password = @Password";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@UserName", txtUserName.Text.Trim());
+                    cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            // ✅ UserID from DB (important for saving entries later)
+                            int userId = reader.GetInt32("UserID");
+
+                            // Username from login form
+                            string userName = txtUserName.Text.Trim();
+
+                            // Profile pic from DB
+                            byte[] imageBytes = reader["ProfilePic"] as byte[];
+                            Image profileImage = null;
+
+                            if (imageBytes != null && imageBytes.Length > 0)
+                            {
+                                using (MemoryStream ms = new MemoryStream(imageBytes))
+                                {
+                                    profileImage = Image.FromStream(ms);
+                                }
+                            }
+
+                            // ✅ Send UserID, Username, ProfilePic to HomePage
+                            HomePage home = new HomePage(userId, userName, profileImage);
+                            home.Show();
+                            
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid username or password.", "Login Failed",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        private void lblForgotPass_Click(object sender, EventArgs e)
+        {
+            PanelForgetPass.Show();
+            LoginPanel.Hide();
+
+        }
+
+        private void lblBack_Click(object sender, EventArgs e)
+        {
+            LoginPanel.Show();
+            PanelForgetPass.Hide();
+        }
+
+        private void LogIn_Load(object sender, EventArgs e)
+        {
+            PanelForgetPass.Hide();
         }
     }
 }
